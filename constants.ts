@@ -78,5 +78,11 @@ export const PROJECTS: Project[] = [
     description: "Social Media Friend Recommendation System using BFS Traversal.",
     tags: ["Java", "BFS", "Graph Theory"],
     link: "https://github.com/AlexanderChia05/DSA_Assignment"
+  },
+  {
+    title: "Personal Portfolio",
+    description: "A responsive, dark-themed portfolio website built with React, TypeScript, and Tailwind CSS.",
+    tags: ["React", "TypeScript", "Tailwind CSS"],
+    link: "https://github.com/KhooShan/PORTFOLIO"
   }
 ];

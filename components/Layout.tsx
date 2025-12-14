@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
-import { Menu, X, Code2 } from 'lucide-react';
+import { Menu, X, Code2, Github } from 'lucide-react';
 import { PERSONAL_INFO } from '../constants';
 
 const Layout: React.FC = () => {
@@ -82,8 +82,17 @@ const Layout: React.FC = () => {
       </main>
 
       {/* Footer */}
-      <footer className="w-full py-6 text-center text-slate-500 text-sm border-t border-slate-900 bg-slate-950">
+      <footer className="w-full py-6 flex flex-col items-center justify-center gap-2 text-center text-slate-500 text-sm border-t border-slate-900 bg-slate-950">
         <p>&copy; {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights reserved.</p>
+        <a 
+          href="https://github.com/KhooShan/PORTFOLIO" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="flex items-center gap-1.5 hover:text-teal-400 transition-colors"
+        >
+          <Github size={14} />
+          <span>Source Code</span>
+        </a>
       </footer>
     </div>
   );
